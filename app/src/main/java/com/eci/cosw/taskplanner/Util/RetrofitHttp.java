@@ -1,7 +1,5 @@
 package com.eci.cosw.taskplanner.Util;
 
-import com.eci.cosw.taskplanner.Service.AuthService;
-
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 

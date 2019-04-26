@@ -1,14 +1,11 @@
 package com.eci.cosw.taskplanner.Activity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.eci.cosw.taskplanner.R;
 import com.eci.cosw.taskplanner.Util.SharedPreference;
 
 public class LaunchActivity extends AppCompatActivity {
