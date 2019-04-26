@@ -14,6 +14,7 @@ import com.eci.cosw.taskplanner.R;
 import com.eci.cosw.taskplanner.Service.AuthService;
 import com.eci.cosw.taskplanner.Util.RetrofitHttp;
 import com.eci.cosw.taskplanner.Util.SharedPreference;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
@@ -31,8 +32,7 @@ public class LoginActivity extends AppCompatActivity {
             Executors.newFixedThreadPool(1);
     Context context = this;
     private SharedPreference sharedPreference;
-    private RetrofitHttp retrofitHttp =
-            new RetrofitHttp(getString(R.string.localhost_url));
+    private RetrofitHttp retrofitHttp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +40,13 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         sharedPreference = new SharedPreference(context);
+        retrofitHttp = new RetrofitHttp(getString(R.string.localhost_url));
 
         authService = retrofitHttp.getRetrofit().create(AuthService.class);
     }
 
-    public void login(View view) {
+    public void login(final View view) {
+        view.setEnabled(false); //This prevent interaction while login
         EditText email = (EditText) findViewById(R.id.email);
         EditText password = (EditText) findViewById(R.id.password);
 
@@ -67,9 +69,13 @@ public class LoginActivity extends AppCompatActivity {
                                 sharedPreference.saveToken(token.getAccessToken());
 
                                 startLoginActivity();
+                                finish(); //This finishes login activity
+                            } else {
+                                showErrorLoginMessage(view);
                             }
                         } catch (IOException e) {
                             e.printStackTrace();
+                            showErrorLoginMessage(view);
                         }
                     }
                 });
@@ -79,6 +85,19 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             email.setError("You must enter an email");
         }
+    }
+
+    public void showErrorLoginMessage(final View view) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                view.setEnabled(true);
+                Snackbar.make(view, getString(R.string.login_error_message),
+                        Snackbar.LENGTH_LONG)
+                        .show();
+
+            }
+        });
     }
 
     public void startLoginActivity() {
