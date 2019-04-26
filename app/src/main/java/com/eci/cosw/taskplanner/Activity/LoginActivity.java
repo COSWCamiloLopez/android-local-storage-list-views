@@ -1,4 +1,4 @@
-package com.eci.cosw.taskplanner;
+package com.eci.cosw.taskplanner.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,12 @@ import android.view.View;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.eci.cosw.taskplanner.Model.LoginWrapper;
+import com.eci.cosw.taskplanner.R;
+import com.eci.cosw.taskplanner.Service.AuthService;
+import com.eci.cosw.taskplanner.Model.Token;
+import com.eci.cosw.taskplanner.Util.SharedPreference;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
@@ -24,16 +30,15 @@ public class LoginActivity extends AppCompatActivity {
 
     private static AuthService authService;
     private final ExecutorService executorService = Executors.newFixedThreadPool(1);
-    private Boolean isLogged;
-    public static final String TOKEN_KEY = "TOKEN_KEY";
     Context context = this;
+    private SharedPreference sharedPreference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        isLogged = false;
+        sharedPreference = new SharedPreference(context);
 
         if (authService == null) {
             Retrofit retrofit = new Retrofit.Builder()
@@ -54,39 +59,37 @@ public class LoginActivity extends AppCompatActivity {
 
         if (!stringEmail.matches("")) {
             if (!stringPassword.matches("")) {
-
+                view.setEnabled(false);
                 executorService.execute(new Runnable() {
                     @Override
                     public void run() {
                         try {
-                            LoginWrapper loginWrapper = new LoginWrapper(stringEmail, stringPassword);
+                            LoginWrapper loginWrapper = new LoginWrapper(stringEmail,
+                                    stringPassword);
                             Response<Token> response = authService.login(loginWrapper).execute();
-                            Token token = response.body();
-                            if (token != null) {
-                                SharedPreferences sharedPreferences = context.getSharedPreferences(
-                                        getString(R.string.preference_file_key), MODE_PRIVATE);
-                                SharedPreferences.Editor editor = sharedPreferences.edit();
-                                editor.putString(TOKEN_KEY, token.getAccessToken());
-                                editor.commit();
+                            if (response.isSuccessful()) {
+                                Token token = response.body();
 
-                                isLogged = true;
+                                sharedPreference.saveToken(token.getAccessToken());
+
+                                startLoginActivity();
                             }
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
                     }
                 });
-
-                if (isLogged) {
-                    Intent loginIntent = new Intent(this, MainActivity.class);
-                    startActivity(loginIntent);
-                }
             } else {
                 password.setError("You must enter a password");
             }
         } else {
             email.setError("You must enter an email");
         }
+    }
+
+    public void startLoginActivity() {
+        Intent mainIntent = new Intent(this, MainActivity.class);
+        startActivity(mainIntent);
     }
 
 }

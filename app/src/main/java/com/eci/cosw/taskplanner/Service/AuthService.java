@@ -1,4 +1,7 @@
-package com.eci.cosw.taskplanner;
+package com.eci.cosw.taskplanner.Service;
+
+import com.eci.cosw.taskplanner.Model.LoginWrapper;
+import com.eci.cosw.taskplanner.Model.Token;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

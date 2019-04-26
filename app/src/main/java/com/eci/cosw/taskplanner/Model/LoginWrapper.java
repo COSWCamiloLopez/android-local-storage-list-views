@@ -1,4 +1,4 @@
-package com.eci.cosw.taskplanner;
+package com.eci.cosw.taskplanner.Model;
 
 public class LoginWrapper {
 
