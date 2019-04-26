@@ -13,6 +13,7 @@ import com.eci.cosw.taskplanner.Model.LoginWrapper;
 import com.eci.cosw.taskplanner.R;
 import com.eci.cosw.taskplanner.Service.AuthService;
 import com.eci.cosw.taskplanner.Model.Token;
+import com.eci.cosw.taskplanner.Util.RetrofitHttp;
 import com.eci.cosw.taskplanner.Util.SharedPreference;
 
 import java.io.IOException;
@@ -29,9 +30,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class LoginActivity extends AppCompatActivity {
 
     private static AuthService authService;
-    private final ExecutorService executorService = Executors.newFixedThreadPool(1);
+    private final ExecutorService executorService =
+            Executors.newFixedThreadPool(1);
     Context context = this;
     private SharedPreference sharedPreference;
+    private RetrofitHttp retrofitHttp =
+            new RetrofitHttp(getString(R.string.localhost_url));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +44,7 @@ public class LoginActivity extends AppCompatActivity {
 
         sharedPreference = new SharedPreference(context);
 
-        if (authService == null) {
-            Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("http://10.0.2.2:8080/") //localhost for emulator
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-
-            authService = retrofit.create(AuthService.class);
-        }
+        authService = retrofitHttp.getRetrofit().create(AuthService.class);
     }
 
     public void login(View view) {
