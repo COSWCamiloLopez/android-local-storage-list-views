@@ -1,9 +1,5 @@
 package com.eci.cosw.taskplanner.Util;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.eci.cosw.taskplanner.R;
-
 import java.io.IOException;
 
 import okhttp3.Interceptor;

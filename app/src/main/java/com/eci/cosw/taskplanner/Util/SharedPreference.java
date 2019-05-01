@@ -3,8 +3,6 @@ package com.eci.cosw.taskplanner.Util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.eci.cosw.taskplanner.R;
-
 public class SharedPreference {
 
     private final SharedPreferences sharedPreferences;
