@@ -14,15 +14,33 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.eci.cosw.taskplanner.Model.User;
 import com.eci.cosw.taskplanner.R;
+import com.eci.cosw.taskplanner.Service.UserService;
+import com.eci.cosw.taskplanner.Util.RetrofitHttp;
+import com.eci.cosw.taskplanner.Util.SharedPreference;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import retrofit2.Response;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    public static final String TOKEN_KEY = "TOKEN_KEY";
+    private String TOKEN_KEY;
+    private String file;
+    private String USER_LOGGED;
+    private SharedPreference sharedPreference;
+    private RetrofitHttp retrofitHttp;
+    private UserService userService;
+
+    private final ExecutorService executorService = Executors
+            .newFixedThreadPool(1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +66,33 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        TOKEN_KEY = getString(R.string.token_key);
+        file = getString(R.string.preference_file_key);
+
+        sharedPreference = new SharedPreference(MainActivity.this, file);
+
+        USER_LOGGED = (String) sharedPreference.getValue(getString(R.string.user_logged));
+
+        retrofitHttp = new RetrofitHttp(sharedPreference
+                .getValue(getString(R.string.token_key)));
+
+        userService = retrofitHttp.getRetrofit().create(UserService.class);
+
+        executorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    System.out.println(USER_LOGGED);
+                    Response<User> userResponse = userService.getUserByEmail(USER_LOGGED).execute();
+                    if (userResponse.isSuccessful()) {
+                        User user = userResponse.body();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @Override
