@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         sharedPreference = new SharedPreference(context);
-        retrofitHttp = new RetrofitHttp(getString(R.string.localhost_url));
+        retrofitHttp = new RetrofitHttp();
 
         authService = retrofitHttp.getRetrofit().create(AuthService.class);
     }
