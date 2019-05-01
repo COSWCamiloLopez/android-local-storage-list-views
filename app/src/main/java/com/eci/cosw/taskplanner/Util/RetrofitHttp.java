@@ -41,7 +41,7 @@ public class RetrofitHttp {
             }
         });
 
-        Retrofit retrofit =
+        this.retrofit =
                 new Retrofit.Builder().baseUrl(BASE_URL)
                         .addConverterFactory(GsonConverterFactory.create())
                         .client(httpClient.build()).build();
