@@ -8,26 +8,30 @@ import com.eci.cosw.taskplanner.R;
 public class SharedPreference {
 
     private final SharedPreferences sharedPreferences;
-    private static final String TOKEN_KEY = "TOKEN_KEY";
+    private Context context;
 
-    public SharedPreference(Context context) {
+    public SharedPreference(Context context, String file) {
+        this.context = context;
         this.sharedPreferences =
-                context.getSharedPreferences(context.getString(R.string.preference_file_key),
-                        Context.MODE_PRIVATE);
+                context.getSharedPreferences(file, Context.MODE_PRIVATE);
     }
 
     public SharedPreferences getSharedPreferences() {
         return sharedPreferences;
     }
 
-    public void saveToken(String token) {
+    public void save(String key, String value) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(TOKEN_KEY, token);
+        editor.putString(key, value);
         editor.commit();
     }
 
-    public Boolean containsToken() {
-        return sharedPreferences.contains(TOKEN_KEY);
+    public Boolean contains(String key) {
+        return sharedPreferences.contains(key);
+    }
+
+    public String getValue(String key) {
+        return sharedPreferences.getString(key,null);
     }
 
 }
