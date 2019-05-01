@@ -1,6 +1,5 @@
 package com.eci.cosw.taskplanner.Activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,16 +29,22 @@ public class LoginActivity extends AppCompatActivity {
     private static AuthService authService;
     private final ExecutorService executorService =
             Executors.newFixedThreadPool(1);
-    Context context = this;
     private SharedPreference sharedPreference;
     private RetrofitHttp retrofitHttp;
+    private String file;
+    private String TOKEN_KEY;
+    private String USER_LOGGED;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        sharedPreference = new SharedPreference(context);
+        file = getString(R.string.preference_file_key);
+        TOKEN_KEY = getString(R.string.token_key);
+        USER_LOGGED = getString(R.string.user_logged);
+
+        sharedPreference = new SharedPreference(this, file);
         retrofitHttp = new RetrofitHttp();
 
         authService = retrofitHttp.getRetrofit().create(AuthService.class);
@@ -47,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(final View view) {
         view.setEnabled(false); //This prevent interaction while login
+
         EditText email = (EditText) findViewById(R.id.email);
         EditText password = (EditText) findViewById(R.id.password);
 
@@ -66,7 +72,9 @@ public class LoginActivity extends AppCompatActivity {
                             if (response.isSuccessful()) {
                                 Token token = response.body();
 
-                                sharedPreference.saveToken(token.getAccessToken());
+                                sharedPreference.save(TOKEN_KEY, token.getAccessToken());
+
+                                sharedPreference.save(USER_LOGGED, stringEmail);
 
                                 startLoginActivity();
                                 finish(); //This finishes login activity
