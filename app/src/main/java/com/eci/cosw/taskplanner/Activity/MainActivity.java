@@ -14,8 +14,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.eci.cosw.taskplanner.Model.Task;
 import com.eci.cosw.taskplanner.Model.User;
 import com.eci.cosw.taskplanner.R;
+import com.eci.cosw.taskplanner.Service.TaskService;
 import com.eci.cosw.taskplanner.Service.UserService;
 import com.eci.cosw.taskplanner.Util.RetrofitHttp;
 import com.eci.cosw.taskplanner.Util.SharedPreference;
@@ -24,6 +26,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -35,9 +38,16 @@ public class MainActivity extends AppCompatActivity
     private String TOKEN_KEY;
     private String file;
     private String USER_LOGGED;
+
+    private User user;
+    private List<Task> taskList;
+
     private SharedPreference sharedPreference;
+
     private RetrofitHttp retrofitHttp;
+
     private UserService userService;
+    private TaskService taskService;
 
     private final ExecutorService executorService = Executors
             .newFixedThreadPool(1);
@@ -78,21 +88,33 @@ public class MainActivity extends AppCompatActivity
                 .getValue(getString(R.string.token_key)));
 
         userService = retrofitHttp.getRetrofit().create(UserService.class);
+        taskService = retrofitHttp.getRetrofit().create(TaskService.class);
 
+        obtainUserInfo();
+    }
+
+    public void obtainUserInfo() {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
                 try {
-                    System.out.println(USER_LOGGED);
                     Response<User> userResponse = userService.getUserByEmail(USER_LOGGED).execute();
                     if (userResponse.isSuccessful()) {
-                        User user = userResponse.body();
+                        user = userResponse.body();
+                        obtainTasks();
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         });
+    }
+
+    public void obtainTasks() throws IOException {
+        Response<List<Task>> response = taskService.userTasks(user.getId()).execute();
+        if (response.isSuccessful()) {
+            taskList = response.body();
+        }
     }
 
     @Override
