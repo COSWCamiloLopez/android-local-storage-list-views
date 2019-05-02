@@ -1,8 +1,16 @@
 package com.eci.cosw.taskplanner.Model;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class User {
 
+    @PrimaryKey
+    @NonNull
     private String id;
+
     private String email;
     private String password;
     private String firstName;
