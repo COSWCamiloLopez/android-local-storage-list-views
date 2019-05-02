@@ -1,9 +1,16 @@
 package com.eci.cosw.taskplanner.Model;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Date;
 
+@Entity
 public class Task {
 
+    @PrimaryKey
+    @NonNull
     private String id;
 
     private String owner;
