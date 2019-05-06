@@ -10,29 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c368ac20-2b66-4688-b7ca-a698a5e3502f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_rc01_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_rc01_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_2_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_rc01_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/AppDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/TaskDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -46,9 +47,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/UserDao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,87 +67,21 @@
     <favorites_list name="android-local-storage-list-views" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Activity/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-405">
-              <caret line="51" selection-start-line="51" selection-end-line="52" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/TaskDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/AppDatabase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#715#1211#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/Task.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#1258#1259#0" expanded="true" />
-                <element signature="e#1296#1297#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>adapter</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -164,16 +98,22 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Util/RetrofitHttp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/Task.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/UserDao.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/TaskDao.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/DateConverter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/AppDatabase.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/task_row.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Util/TaskAdapter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="60" />
     <option name="y" value="27" />
     <option name="width" value="1860" />
     <option name="height" value="1053" />
@@ -183,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
@@ -208,7 +147,7 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="taskplanner" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="Activity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android-local-storage-list-views" type="1abcf292:AndroidViewProjectNode" />
@@ -218,6 +157,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -494,7 +434,105 @@
       <option name="project" value="LOCAL" />
       <updated>1556752328013</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Local database class created">
+      <created>1556817551407</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556817551407</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Room dependencies addded">
+      <created>1556817592391</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1556817592391</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Annotations added">
+      <created>1556817626621</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1556817626621</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Task dao created">
+      <created>1556817636963</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1556817636963</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Annotations added">
+      <created>1556817649970</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1556817649970</updated>
+    </task>
+    <task id="LOCAL-00032" summary="User dao added">
+      <created>1556817660665</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1556817660665</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Android files commit">
+      <created>1556817674592</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1556817674592</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Data type converter added and taskDao instance created">
+      <created>1557101749776</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1557101749776</updated>
+    </task>
+    <task id="LOCAL-00035" summary="RecyclerView implementation added">
+      <created>1557101772371</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1557101772371</updated>
+    </task>
+    <task id="LOCAL-00036" summary="RecyclerView added">
+      <created>1557101802065</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1557101802065</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Date converter class created">
+      <created>1557101816265</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1557101816265</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Show user tasks in MainActivity done">
+      <created>1557101873079</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1557101873079</updated>
+    </task>
+    <task id="LOCAL-00039" summary="task_row layout created">
+      <created>1557101895461</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1557101895461</updated>
+    </task>
+    <task id="LOCAL-00040" summary="TaskAdapter class created and TODO implemented">
+      <created>1557101939234</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1557101939234</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -513,11 +551,11 @@
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.3293348" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3293348" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32861805" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5011025" side_tool="true" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.32824427" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.9672846" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49944875" weight="0.3293348" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.3293348" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.3293348" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -567,19 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Shared preference class created and packages reorganaized" />
-    <MESSAGE value="RetrofitHttp instance created" />
-    <MESSAGE value="RetrofitHttp class created" />
-    <MESSAGE value="localhost url added" />
-    <MESSAGE value="Unused imports fixed" />
-    <MESSAGE value="Retrofit instance fixed, setEnable to prevent user interaction added and show snackBar error added" />
-    <MESSAGE value="Login error message added" />
-    <MESSAGE value="Retrofit token interceptor created" />
-    <MESSAGE value="TaskService interface in progress" />
-    <MESSAGE value="Android files commit" />
-    <MESSAGE value="SharedPreference instance changed, token and file string obtained from strings.xml file" />
-    <MESSAGE value="Token and user logged saved on shared preferences, file, token and user logged obtained from strings.xml file" />
-    <MESSAGE value="Obtain user information when is logged done" />
     <MESSAGE value="Retrofit instance fixed" />
     <MESSAGE value="get value from a key implemented, save value into a key implemented, constructor edited to allow different files" />
     <MESSAGE value="User logged added" />
@@ -592,7 +617,20 @@
     <MESSAGE value="Obtain tasks from user logged done" />
     <MESSAGE value="Some android files commit" />
     <MESSAGE value="Local database class created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Local database class created" />
+    <MESSAGE value="Room dependencies addded" />
+    <MESSAGE value="Task dao created" />
+    <MESSAGE value="Annotations added" />
+    <MESSAGE value="User dao added" />
+    <MESSAGE value="Android files commit" />
+    <MESSAGE value="Data type converter added and taskDao instance created" />
+    <MESSAGE value="RecyclerView implementation added" />
+    <MESSAGE value="RecyclerView added" />
+    <MESSAGE value="Date converter class created" />
+    <MESSAGE value="Show user tasks in MainActivity done" />
+    <MESSAGE value="task_row layout created" />
+    <MESSAGE value="TaskAdapter class created and TODO implemented" />
+    <MESSAGE value="Insert method implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Insert method implemented" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/android/content/ContextWrapper.java">
@@ -631,8 +669,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Util/SharedPreference.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -726,35 +764,6 @@
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -765,38 +774,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/AppDatabase.java">
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-28/androidx/leanback/widget/ViewHolderTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#715#1211#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#0#843#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Activity/MainActivity.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.0.0-beta01/768e01b490e5478935ed23a90ea3f02a7c07e287/recyclerview-1.0.0-beta01-sources.jar!/androidx/recyclerview/widget/RecyclerView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="51" selection-start-line="51" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/TaskDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="195">
+          <caret line="10689" column="26" selection-start-line="10689" selection-start-column="26" selection-end-line="10689" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="60">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/TaskDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Model/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/DateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/db/AppDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="135" column="46" selection-start-line="135" selection-start-column="46" selection-end-line="135" selection-end-column="46" />
+          <folding>
+            <element signature="e#4928#5144#0" expanded="true" />
+            <element signature="e#5143#5144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/task_row.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eci/cosw/taskplanner/Util/TaskAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
