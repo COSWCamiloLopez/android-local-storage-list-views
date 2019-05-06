@@ -1,4 +1,7 @@
 package com.eci.cosw.taskplanner.db;
 
-public class UserDao {
+import androidx.room.Dao;
+
+@Dao
+public interface UserDao {
 }
