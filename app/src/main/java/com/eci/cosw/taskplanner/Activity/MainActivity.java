@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.eci.cosw.taskplanner.Model.Task;
 import com.eci.cosw.taskplanner.Model.User;
@@ -21,6 +23,8 @@ import com.eci.cosw.taskplanner.Service.TaskService;
 import com.eci.cosw.taskplanner.Service.UserService;
 import com.eci.cosw.taskplanner.Util.RetrofitHttp;
 import com.eci.cosw.taskplanner.Util.SharedPreference;
+import com.eci.cosw.taskplanner.Util.TaskAdapter;
+import com.eci.cosw.taskplanner.db.AppDatabase;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -49,8 +53,16 @@ public class MainActivity extends AppCompatActivity
     private UserService userService;
     private TaskService taskService;
 
+    private AppDatabase appDatabase;
+
     private final ExecutorService executorService = Executors
             .newFixedThreadPool(1);
+
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager layoutManager;
+
+    private TaskAdapter taskAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +102,16 @@ public class MainActivity extends AppCompatActivity
         userService = retrofitHttp.getRetrofit().create(UserService.class);
         taskService = retrofitHttp.getRetrofit().create(TaskService.class);
 
+        appDatabase = AppDatabase.getInMemoryDatabase(getApplicationContext());
+
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+
+        taskAdapter = new TaskAdapter();
+
         obtainUserInfo();
     }
 
@@ -101,8 +123,21 @@ public class MainActivity extends AppCompatActivity
                     Response<User> userResponse = userService.getUserByEmail(USER_LOGGED).execute();
                     if (userResponse.isSuccessful()) {
                         user = userResponse.body();
-                        obtainTasks();
                     }
+                    Response<List<Task>> response = taskService.userTasks(user.getId()).execute();
+                    if (response.isSuccessful()) {
+                        taskList = response.body();
+                    }
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            recyclerView.setAdapter(taskAdapter);
+                            taskAdapter.updateTasks(taskList);
+                        }
+                    });
+
+                    //            saveTasks();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -110,10 +145,9 @@ public class MainActivity extends AppCompatActivity
         });
     }
 
-    public void obtainTasks() throws IOException {
-        Response<List<Task>> response = taskService.userTasks(user.getId()).execute();
-        if (response.isSuccessful()) {
-            taskList = response.body();
+    public void saveTasks() {
+        for (Task task : taskList) {
+            appDatabase.taskModel().insertTask(task);
         }
     }
 
